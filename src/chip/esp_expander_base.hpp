@@ -71,7 +71,7 @@ public:
         }
 
         int host_id = I2C_HOST_ID_DEFAULT;  /*!< I2C host ID */
-        std::optional<HostConfig> host;     /*!< I2C host configuration */
+        std::optional<HostConfig> host = std::nullopt;     /*!< I2C host configuration */
         DeviceConfig device = {};           /*!< I2C device configuration */
     };
 
